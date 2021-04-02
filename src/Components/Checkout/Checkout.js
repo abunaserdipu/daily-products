@@ -8,7 +8,7 @@ const Checkout = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/product/" + productId)
+    fetch("https://aqueous-coast-15847.herokuapp.com/product/" + productId)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

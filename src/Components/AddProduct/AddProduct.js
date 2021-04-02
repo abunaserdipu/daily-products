@@ -15,7 +15,7 @@ const AddProduct = () => {
       imageURL: imageURL,
       price: data.price,
     };
-    const url = `http://localhost:5000/addProduct`;
+    const url = `https://aqueous-coast-15847.herokuapp.com/addProduct`;
     fetch(url, {
       method: "POST",
       headers: {

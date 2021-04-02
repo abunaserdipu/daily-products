@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const ShowManageProduct = ({ product }) => {
   const deleteProduct = (id) => {
     console.log(id);
-    fetch(`http://localhost:5000/deleteProduct/${id}`, {
+    fetch(`https://aqueous-coast-15847.herokuapp.com/deleteProduct/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

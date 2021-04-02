@@ -5,7 +5,7 @@ import PassOrder from "../PassOrder/PassOrder";
 const Orders = () => {
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/orders")
+    fetch("https://aqueous-coast-15847.herokuapp.com/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);

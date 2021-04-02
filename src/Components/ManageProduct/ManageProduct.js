@@ -5,7 +5,7 @@ import Sidebar from "../Sidebar/Sidebar";
 const ManageProduct = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/manageProduct")
+    fetch("https://aqueous-coast-15847.herokuapp.com/manageProduct")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [products]);
