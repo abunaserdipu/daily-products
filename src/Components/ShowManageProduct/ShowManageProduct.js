@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 
 const ShowManageProduct = ({ product }) => {
-  const [productDelete, setProductDelete] = useState([]);
   const deleteProduct = (id) => {
     console.log(id);
     fetch(`http://localhost:5000/deleteProduct/${id}`, {

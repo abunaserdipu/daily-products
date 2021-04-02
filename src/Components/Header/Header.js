@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../App";
 import "./header.css";
@@ -34,10 +34,10 @@ const Header = () => {
               <Link className="nav-link" to="/addProduct">
                 <strong>Admin</strong>
               </Link>
-              <Link className="nav-link" to="/login">
-                <strong>Log In</strong>
-              </Link>
-              <h6>{loggedInUser.name}</h6>
+                <Link className="btn btn-primary" to="/login">
+                  <strong>Log In</strong>
+                </Link>
+                <h6>{loggedInUser.name}</h6>
             </div>
           </div>
         </div>
